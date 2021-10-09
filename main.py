@@ -30,5 +30,6 @@ payload = {
 			}]
 }
 sendmsg = requests.post(url+f"/channels/{cid}/messages", json=payload, headers=auth).json()
-sendreact = requests.put(url+f"/channels/{sendmsg['channel_id']}/messages/{sendmsg['id']}/reactions/❤️/@me", headers=auth)
+mid = sendmsg['id']
+sendreact = requests.put(url+f"/channels/{cid}/messages/{mid}/reactions/❤️/@me", headers=auth)
 print("\033[1;37;42msuccess\033[1;37;40m"+f" Successfully sent cat image to {acc}")
