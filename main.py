@@ -1,16 +1,25 @@
 """
 #####################################################
 # Send cat images to a user utilizing discord's api #
-# Made by sorrow#1773 | github.com/0x1773            #
+# Made by sorrow#1773 | github.com/0x1773           #
 #####################################################
 """
-import requests, os, time
+import requests, os, time, json
 from time import sleep
 from os import system
+with open('config.json') as f:
+    config = json.load(f)
 system('clear')
 url = "https://discord.com/api/v9"
-token = "NjIyMzI0NDI0MDc0MzMwMTQy.YVR8Gg.dpP82rznGniZziqZYRey7MCQx6Q" #Your user token or a bot token
-target = "877979700897652766" # User to send the message to
+token = config.get("token") #Your user token or a bot token
+tkninfo = requests.get(url+"/users/@me", headers={'Authorization': token}).json()
+if "id" in tkninfo:
+	print("\033[1;37;42msuccess\033[1;37;40m Token loaded from config.json")
+else:
+	print("\033[1;37;41merror\033[1;37;40m Invalid token passed. did you run config.py before this?")
+	print("Exiting..")
+	exit()
+target = input("\033[1;37;45mTarget ID\033[1;37;40m ") # User to send the message to
 auth = {
 	"Authorization": token
 }
