@@ -15,6 +15,6 @@ I, THE DEVELOPER TAKE NO RESPONSIBILITY IF YOUR ACCOUNT GETS TERMINATED
 - [ ] Auto-sending at specified interval(s)
 - [ ] Enable/Disable pinging at message arrival
 - [ ] Enable/Disable auto-react
-# Copying code/leeching
-If you release a project with code from my project please credit me!<br>
+# Issues/Questions
+Create an issue with your question<br>
 ###### Yes I'm learning html to make these better
