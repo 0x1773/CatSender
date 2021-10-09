@@ -1,5 +1,5 @@
 ![Logo](https://media.discordapp.net/attachments/776757011589103626/896327707586089010/Untitled76_3.png)
-![Python Version](https://img.shields.io/badge/Python-3.10.0-yellow?style=flat&logo=python) ![Requests Version](https://img.shields.io/badge/Requests-2.26.0-blue) ![Tested On](https://img.shields.io/badge/Tested%20on-Termux-blue?style=flat&logo=github)
+![Python Version](https://img.shields.io/badge/Python-3.10.0-yellow?style=flat&logo=python) ![Requests Version](https://img.shields.io/badge/Requests-2.26.0-blue) ![Tested On](https://img.shields.io/badge/Tested%20on-Termux-blue?style=flat&logo=github) ![Status](https://img.shields.io/badge/Status-unfinished-yellow)
 ## Disclaimer
 Please, people, only use this with someone you trust, send this to the wrong people and you can get reported :(<br>
 I, THE DEVELOPER TAKE NO RESPONSIBILITY IF YOUR ACCOUNT GETS TERMINATED
