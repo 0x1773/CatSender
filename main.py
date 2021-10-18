@@ -1,7 +1,7 @@
 """
 #####################################################
 # Send cat images to a user utilizing discord's api #
-# Made by sorrow#1773 | github.com/0x1773           #
+# Made by sorrow#1773 | github.com/5jf6             #
 #####################################################
 """
 import requests, os, time, json
@@ -34,7 +34,7 @@ catimg = requests.get("https://api.thecatapi.com/v1/images/search").json()
 payload = {
 	"content": f"Enjoy your cat image <@{target}>",
 	"embeds": [{
-		"description": f"📎 [Original Image]({catimg[0]['url']}) | ⚡ [Source Code](https://github.com/0x1773/CatSender)",
+		"description": f"📎 [Original Image]({catimg[0]['url']}) | ⚡ [Source Code](https://github.com/5jf6/CatSender)",
 		"image": {"url": catimg[0]['url']},
 		"footer": {"text": "Made with ❤️ by sorrow#1773"}
 			}]
